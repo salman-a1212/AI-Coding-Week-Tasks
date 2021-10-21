@@ -10,47 +10,60 @@
   <body>
     <div class="main">
       <div class="app">
-        <h2>Current Day and Time</h2>
-        <div class="cdayt">
-          <h2 id="current-day"></h2>
-          <h2 id="current-time"></h2>
-        </div>
-        <h2>Current Date</h2>
-        <div class="cdate">
-          <h2 id="current-date"></h2>
-        </div>
-        <div class="triangle">
-          <h2 class="hdtri">Area of a triangle</h2>
-          <div class="tri-grid">
-            <div class="fld">
-              <label for="side1"> Side 1 length: </label>
-              <input
-                type="number"
-                id="side1"
-                placeholder="Enter value of side 1"
-                value="5"
-              />
+        <!-- <div class="tab-btn">
+          <button class="tablinks">Current Day & Time</button>
+          <button class="tablinks">Current Date</button>
+          <button class="tablinks">Triangle Area</button>
+        </div> -->
+        <div class="wrapper">
+          <div class="tab active" id="tab1">
+            <h2>Current Day and Time</h2>
+            <div class="cdayt">
+              <h2 id="current-day"></h2>
+              <h2 id="current-time"></h2>
             </div>
-            <div class="fld">
-              <label for="side2"> Side 2 length: </label>
-              <input
-                type="number"
-                id="side2"
-                placeholder="Enter value of side 2"
-                value="6"
-              />
+          </div>
+          <div class="tab" id="tab2">
+            <h2>Current Date</h2>
+            <div class="cdate">
+              <h2 id="current-date"></h2>
             </div>
-            <div class="fld">
-              <label for="side3"> Side 3 length: </label>
-              <input
-                type="number"
-                id="side3"
-                placeholder="Enter value of side 2"
-                value="7"
-              />
+          </div>
+          <div class="tab" id="tab3">
+            <div class="triangle">
+              <h2 class="hdtri">Area of a triangle</h2>
+              <div class="tri-grid">
+                <div class="fld">
+                  <label for="side1"> Side 1 length: </label>
+                  <input
+                    type="number"
+                    id="side1"
+                    placeholder="Enter value of side 1"
+                    value="5"
+                  />
+                </div>
+                <div class="fld">
+                  <label for="side2"> Side 2 length: </label>
+                  <input
+                    type="number"
+                    id="side2"
+                    placeholder="Enter value of side 2"
+                    value="6"
+                  />
+                </div>
+                <div class="fld">
+                  <label for="side3"> Side 3 length: </label>
+                  <input
+                    type="number"
+                    id="side3"
+                    placeholder="Enter value of side 2"
+                    value="7"
+                  />
+                </div>
+                <p id="area">Triangle Area: <span id="display"></span></p>
+                <button id="calc">Calculate</button>
+              </div>
             </div>
-            <p id="area">Triangle Area: <span id="display"></span></p>
-            <button id="calc">Calculate</button>
           </div>
         </div>
       </div>
