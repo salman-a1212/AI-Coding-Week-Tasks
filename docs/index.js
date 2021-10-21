@@ -1,8 +1,4 @@
 const dayTime = new Date();
-
-const currentDate = new Date();
-console.log("current date", currentDate);
-
 const weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
