@@ -83,3 +83,8 @@ label {
 #area {
   margin-left: 10px;
 }
+
+.triangle {
+  background-color: #ddd;
+  padding: 25px;
+}
