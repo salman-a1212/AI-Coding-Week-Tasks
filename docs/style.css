@@ -19,6 +19,7 @@
 .cdate {
   border: 1px solid #ddd;
   margin: 50px;
+  padding: 10px;
 }
 
 #current-day {
