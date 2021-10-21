@@ -33,13 +33,13 @@ function timer() {
   if (sec < 10) {
     sec = "0" + sec;
   }
-  var t_str = hours + ":" + minutes + ":" + sec + " ";
+  var timeStr = hours + ":" + minutes + ":" + sec + " ";
   if (hours > 11) {
-    t_str += "PM";
+    timeStr += "PM";
   } else {
-    t_str += "AM";
+    timeStr += "AM";
   }
-  document.getElementById("current-time").innerHTML = t_str;
+  document.getElementById("current-time").innerHTML = timeStr;
   setTimeout(timer, 1000);
 }
 
