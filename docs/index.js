@@ -18,11 +18,13 @@ console.log("day", day);
 var today = new Date();
 var time =
   today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log("time", time);
 
 function timer() {
   var currentTime = new Date();
   var hours = currentTime.getHours();
   var minutes = currentTime.getMinutes();
+  console.log("min", minutes);
   var sec = currentTime.getSeconds();
   if (minutes < 10) {
     minutes = "0" + minutes;
@@ -32,7 +34,7 @@ function timer() {
   }
   var timeStr =
     hours > 11
-      ? `${hours} PM `
+      ? `${hours} PM ` + " " + ":" + " " + minutes + " " + ":" + " " + sec
       : `${hours} AM ` + " " + ":" + " " + minutes + " " + ":" + " " + sec;
 
   document.getElementById("current-time").innerHTML = timeStr;
