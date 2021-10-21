@@ -1,3 +1,4 @@
+// 1.
 const dayTime = new Date();
 const weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -39,3 +40,26 @@ function timer() {
 }
 
 timer();
+
+// 2.
+const d = new Date();
+const m = console.log("d", d);
+const currentDate = d.getDate();
+const currentMonth = d.getMonth();
+const currentYear = d.getFullYear();
+const months = [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+];
+document.getElementById("current-date").innerHTML =
+  `${currentDate}-` + months[d.getMonth()] + `-${currentYear}`;
