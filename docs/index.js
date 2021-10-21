@@ -29,12 +29,11 @@ function timer() {
   if (sec < 10) {
     sec = "0" + sec;
   }
-  var timeStr = hours + ":" + minutes + ":" + sec + " ";
-  if (hours > 11) {
-    timeStr += "PM";
-  } else {
-    timeStr += "AM";
-  }
+  var timeStr =
+    hours > 11
+      ? `${hours} PM `
+      : `${hours} AM ` + " " + ":" + " " + minutes + " " + ":" + " " + sec;
+
   document.getElementById("current-time").innerHTML = timeStr;
   setTimeout(timer, 1000);
 }
