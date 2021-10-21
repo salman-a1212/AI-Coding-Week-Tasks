@@ -14,7 +14,8 @@
   align-items: center;
 }
 
-.cdayt {
+.cdayt,
+.cdate {
   border: 1px solid #ddd;
   margin: 50px;
 }
@@ -25,7 +26,8 @@
   text-align: center;
 }
 
-#current-time {
+#current-time,
+#current-date {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
