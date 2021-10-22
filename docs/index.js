@@ -105,3 +105,21 @@ for (var i = 0; i < len; i++) {
   console.log(str);
   extList.innerHTML += str + "<br>" + "<br>";
 }
+
+// 5.
+// program to check leap year
+// take input
+
+let lpBtn = document.getElementById("lp-btn");
+let inpYear = document.getElementById("yrinput").value;
+lpBtn.onclick = function checkLeapYear(inpYear) {
+  console.log("inpYear", inpYear);
+  const leap = new Date(year, 1, 29).getDate() === 29;
+  if (leap) {
+    console.log(inpYear + " is a leap year");
+  } else {
+    console.log(inpYear + " is not a leap year");
+  }
+};
+
+// checkLeapYear(inpYear);
