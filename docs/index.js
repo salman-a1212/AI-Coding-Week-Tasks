@@ -103,5 +103,5 @@ for (var i = 0; i < len; i++) {
   // j--;
   str = sTr + str;
   console.log(str);
-  extList.innerHTML += str + "<br>";
+  extList.innerHTML += str + "<br>" + "<br>";
 }
