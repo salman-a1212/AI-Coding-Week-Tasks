@@ -94,3 +94,9 @@ label {
 .tab {
   text-align: center;
 }
+
+.str-con,
+.list-wrapper {
+  text-align: center;
+  margin: 50px;
+}
