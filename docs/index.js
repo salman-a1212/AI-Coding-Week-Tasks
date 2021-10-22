@@ -85,3 +85,23 @@ calc.onclick = function Area() {
 
   document.getElementById("display").innerHTML = area;
 };
+
+// 4.
+var str = "Saylani";
+var str1 = "";
+
+var len = str.length;
+
+var j = len - 1;
+
+for (var i = 0; i < len; i++) {
+  let extList = document.querySelector(".extList");
+  //console.log(str.length);
+  var sTr = str[j];
+  str = str.slice(0, -1);
+  // console.log(str);
+  // j--;
+  str = sTr + str;
+  console.log(str);
+  extList.innerHTML += str + "<br>";
+}
