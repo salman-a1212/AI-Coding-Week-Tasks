@@ -10,6 +10,7 @@
   <body>
     <div class="main">
       <div class="app">
+      <h1 class="mhdr">Coding Week Assignment</h1>
         <!-- <div class="tab-btn">
           <button class="tablinks">Current Day & Time</button>
           <button class="tablinks">Current Date</button>
@@ -180,6 +181,10 @@ label {
 .list-wrapper {
   text-align: center;
   margin: 50px;
+}
+
+.mhdr {
+  padding: 50px;
 }
 </style>
 
