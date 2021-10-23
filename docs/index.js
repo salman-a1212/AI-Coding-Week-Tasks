@@ -121,3 +121,17 @@ lpBtn.onclick = function checkLeapYear() {
     lprndr.innerText = `${inpYear} is not a leap year.`;
   }
 };
+
+// 6.
+let sunBtn = document.getElementById("sun-btn");
+sunBtn.onclick = function sunLookUp() {
+  let input = document.getElementById("inptyr").value;
+  var year = input;
+  var date = new Date(year, 0, 1);
+  let sunRndr = document.getElementById("sunrndr");
+  if (date.getDay() === 0) {
+    sunRndr.innerText = `1st January is being a Sunday in the year ${year}`;
+  } else {
+    sunRndr.innerText = `1st January is not being a Sunday in the year ${year}`;
+  }
+};
