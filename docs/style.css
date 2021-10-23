@@ -105,7 +105,8 @@ label {
   padding: 50px;
 }
 
-.lpyr-con {
+.lpyr-con,
+.tsk6con {
   text-align: center;
   padding: 20px;
   margin: 20px;
@@ -115,7 +116,8 @@ label {
   margin: 50px;
 }
 
-#lp-btn {
+#lp-btn,
+#sun-btn {
   padding: 5px 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -125,7 +127,8 @@ label {
   margin-left: 10px;
 }
 
-#lprndr {
+#lprndr,
+#sunrndr {
   border: 1px solid #ddd;
   margin: 50px;
   padding: 5px;
