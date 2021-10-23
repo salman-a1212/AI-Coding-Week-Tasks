@@ -116,8 +116,8 @@ lpBtn.onclick = function checkLeapYear() {
   const leap = new Date(inpYear, 1, 29).getDate() === 29;
   let lprndr = document.getElementById("lprndr");
   if (leap) {
-    lprndr.innerText = `${inpYear} is a leap year`;
+    lprndr.innerText = `${inpYear} is a leap year.`;
   } else {
-    lprndr.innerText = `${inpYear} is not a leap year`;
+    lprndr.innerText = `${inpYear} is not a leap year.`;
   }
 };
