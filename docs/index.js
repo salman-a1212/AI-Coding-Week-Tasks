@@ -145,3 +145,14 @@ sunBtn.onclick = function sunLookUp() {
     sunRndr.style.color = "red";
   }
 };
+
+// 7.
+let numBtn = document.getElementById("num-btn");
+numBtn.onclick = function promptIt() {
+  let userNum = Number(prompt("Please choose any number between 1 and 10"));
+  if (userNum >= "1" && userNum <= "10") {
+    alert("Good Work");
+  } else {
+    alert("Not matched");
+  }
+};
