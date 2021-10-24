@@ -166,3 +166,39 @@ const DaysLeft = Math.round((nDate.getTime() - e.getTime()) / 86400000);
 console.log("DaysLeft", DaysLeft);
 let dayRndr = document.getElementById("dayrndr");
 dayRndr.innerText = `${DaysLeft} days left!`;
+
+// 9.
+let num1 = Number(document.getElementById("num1").value);
+let num2 = Number(document.getElementById("num2").value);
+let multiBtn = document.getElementById("btn-1");
+let diviBtn = document.getElementById("btn-2");
+
+// Multiply
+multiBtn.onclick = function () {
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let multiBtn = document.getElementById("btn-1");
+  let diviBtn = document.getElementById("btn-2");
+  let multiRndr = document.getElementById("multirndr");
+  let multi = num1 * num2;
+  console.log("multi", multi);
+  multiRndr.innerText = multi;
+};
+// Divide
+diviBtn.onclick = function () {
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let multiBtn = document.getElementById("btn-1");
+  let diviBtn = document.getElementById("btn-2");
+  let diviRndr = document.getElementById("divirndr");
+  let divi;
+  if (num1 === "0" && num2 === "0") {
+    divi = Number(num1 / num2).toFixed(2);
+  } else if (num2 === 0 && num1 !== 0) {
+    alert("The Number 2 can not be a zero");
+  } else {
+    divi = Number(num1 / num2).toFixed(2);
+  }
+  console.log("divi", divi);
+  diviRndr.innerText = divi;
+};
