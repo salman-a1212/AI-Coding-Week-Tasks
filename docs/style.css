@@ -165,7 +165,7 @@ input::placeholder {
 
 #multirndr,
 #divirndr {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   margin: 25px;
   margin-left: 70px;
   padding: 5px 10px;
