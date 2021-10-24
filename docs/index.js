@@ -202,3 +202,6 @@ diviBtn.onclick = function () {
   console.log("divi", divi);
   diviRndr.innerText = divi;
 };
+
+// 10.
+// Temp converter
