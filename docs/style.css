@@ -107,7 +107,8 @@ label {
 
 .lpyr-con,
 .tsk6con,
-.tsk7con {
+.tsk7con,
+.tsk8con {
   text-align: center;
   padding: 20px;
   margin: 20px;
@@ -130,7 +131,8 @@ label {
 }
 
 #lprndr,
-#sunrndr {
+#sunrndr,
+#dayrndr {
   border: 1px solid #ddd;
   margin: 50px;
   padding: 5px;
