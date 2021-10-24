@@ -205,3 +205,25 @@ diviBtn.onclick = function () {
 
 // 10.
 // Temp converter
+let c2FBtn = document.getElementById("c2f");
+let tempC = Number(document.getElementById("tempc").value);
+let f2cBtn = document.getElementById("f2c");
+let tempF = Number(document.getElementById("tempf").value);
+
+c2FBtn.onclick = function () {
+  let tempC = Number(document.getElementById("tempc").value);
+  let crndr;
+  crndr = (tempC * 9) / 5 + 32;
+  console.log("crndr", crndr);
+  let c2fRes = document.getElementById("c2fres");
+  c2fRes.innerText = crndr.toFixed(2);
+};
+
+f2cBtn.onclick = function () {
+  let tempF = Number(document.getElementById("tempf").value);
+  let frndr;
+  frndr = tempF - (32 * 5) / 9;
+  console.log("frndr", frndr);
+  let f2cRes = document.getElementById("f2cres");
+  f2cRes.innerText = frndr.toFixed(2);
+};
