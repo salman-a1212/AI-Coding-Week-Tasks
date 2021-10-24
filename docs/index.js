@@ -156,3 +156,13 @@ numBtn.onclick = function promptIt() {
     alert("Not matched");
   }
 };
+
+// 8.
+const e = new Date();
+
+const nDate = new Date(2022, 07, 14);
+
+const DaysLeft = Math.round((nDate.getTime() - e.getTime()) / 86400000);
+console.log("DaysLeft", DaysLeft);
+let dayRndr = document.getElementById("dayrndr");
+dayRndr.innerText = `${DaysLeft} days left!`;
