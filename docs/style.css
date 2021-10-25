@@ -112,7 +112,8 @@ label {
 .tsk9con,
 .tsk10con,
 .tsk11con,
-.tsk12con {
+.tsk12con,
+.tsk13con {
   text-align: center;
   padding: 20px;
   /* margin: 20px; */
@@ -130,7 +131,8 @@ label {
 #c2f,
 #f2c,
 #add-btn,
-#th-btn {
+#th-btn,
+#ln-btn {
   padding: 5px 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -144,7 +146,8 @@ label {
 #sunrndr,
 #dayrndr,
 #f2cres,
-#c2fres {
+#c2fres,
+#lnres {
   border: 1px solid #ddd;
   margin: 50px;
   padding: 5px;
@@ -215,7 +218,7 @@ input::placeholder {
 
 #addres,
 #thres {
-  margin: 0 15px;
+  margin: 15px;
   border: 1px solid #ddd;
   padding: 5px 10px;
   color: red;
@@ -223,4 +226,18 @@ input::placeholder {
 
 .space {
   margin: 0 25px;
+}
+
+.ln-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+#ln1,
+#ln2,
+#ln3 {
+  margin: 20px 0;
 }
