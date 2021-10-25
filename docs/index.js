@@ -24,7 +24,7 @@ function timer() {
   var currentTime = new Date();
   var hours = currentTime.getHours();
   var minutes = currentTime.getMinutes();
-  console.log("min", minutes);
+  // console.log("min", minutes);
   var sec = currentTime.getSeconds();
   if (minutes < 10) {
     minutes = "0" + minutes;
@@ -226,4 +226,22 @@ f2cBtn.onclick = function () {
   console.log("frndr", frndr);
   let f2cRes = document.getElementById("f2cres");
   f2cRes.innerText = frndr.toFixed(2);
+};
+
+// 11.
+let n1 = Number(document.getElementById("n1").value);
+let n2 = Number(document.getElementById("n2").value);
+let addBtn = document.getElementById("add-btn");
+let addRes = document.getElementById("addres");
+
+addBtn.onclick = function () {
+  let n1 = Number(document.getElementById("n1").value);
+  let n2 = Number(document.getElementById("n2").value);
+  let n3 = n1 + n2;
+  if (n1 === n2) {
+    n3 * 3;
+    addRes.innerText = n3 * 3;
+  } else {
+    addRes.innerText = n3;
+  }
 };
