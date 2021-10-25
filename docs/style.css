@@ -110,10 +110,11 @@ label {
 .tsk7con,
 .tsk8con,
 .tsk9con,
-.tsk10con {
+.tsk10con,
+.tsk11con {
   text-align: center;
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .input-con {
@@ -126,7 +127,8 @@ label {
 #btn-1,
 #btn-2,
 #c2f,
-#f2c {
+#f2c,
+#add-btn {
   padding: 5px 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -192,4 +194,29 @@ input::placeholder {
 
 .t-con {
   margin: 25px;
+}
+
+.addbtn-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.addcon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#addres {
+  margin: 0 15px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  color: red;
+}
+
+.space {
+  margin: 0 25px;
 }
