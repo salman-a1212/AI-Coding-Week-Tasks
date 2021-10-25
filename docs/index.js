@@ -261,3 +261,20 @@ thBtn.onclick = function () {
     thRes.innerText = "The given number is not within the 20 of 100 or 400";
   }
 };
+
+// 13.
+let lN1 = Number(document.getElementById("ln1").value);
+let lN2 = Number(document.getElementById("ln2").value);
+let lN3 = Number(document.getElementById("ln3").value);
+let lnBtn = document.getElementById("ln-btn");
+let lnRes = document.getElementById("lnres");
+
+lnBtn.onclick = function () {
+  let lN1 = Number(document.getElementById("ln1").value);
+  let lN2 = Number(document.getElementById("ln2").value);
+  let lN3 = Number(document.getElementById("ln3").value);
+  let lnBtn = document.getElementById("ln-btn");
+  let lnRes = document.getElementById("lnres");
+  let lNum = Math.max(lN1, lN2, lN3);
+  lnRes.innerText = lNum;
+};
