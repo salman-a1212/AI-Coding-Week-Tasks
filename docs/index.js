@@ -278,3 +278,19 @@ lnBtn.onclick = function () {
   let lNum = Math.max(lN1, lN2, lN3);
   lnRes.innerText = lNum;
 };
+
+// 14.
+let word = document.getElementById("word").value;
+let wrdBtn = document.getElementById("wrd-btn");
+let sentCase = document.getElementById("sent-case");
+
+wrdBtn.onclick = function () {
+  let wordInput = document.getElementById("word").value;
+  let wrdBtn = document.getElementById("wrd-btn");
+  let sentCase = document.getElementById("sent-case");
+  let word = wordInput.split(" ");
+  for (let i = 0; i < word.length; i++) {
+    word[i] = word[i][0].toUpperCase() + word[i].substr(1);
+  }
+  sentCase.innerHTML = word.join(" ");
+};
