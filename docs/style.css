@@ -113,7 +113,8 @@ label {
 .tsk10con,
 .tsk11con,
 .tsk12con,
-.tsk13con {
+.tsk13con,
+.tsk14con {
   text-align: center;
   padding: 20px;
   /* margin: 20px; */
@@ -132,7 +133,8 @@ label {
 #f2c,
 #add-btn,
 #th-btn,
-#ln-btn {
+#ln-btn,
+#wrd-btn {
   padding: 5px 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -210,14 +212,16 @@ input::placeholder {
 }
 
 .addcon,
-.th-con {
+.th-con,
+.wrdcon {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 #addres,
-#thres {
+#thres,
+#sent-case {
   margin: 15px;
   border: 1px solid #ddd;
   padding: 5px 10px;
