@@ -294,3 +294,24 @@ wrdBtn.onclick = function () {
   }
   sentCase.innerHTML = word.join(" ");
 };
+
+// 15.
+let tdHrs = 24;
+let tdMins = 1440;
+let dthmInput = Number(document.getElementById("dthm").value);
+let dthmBtn = document.getElementById("dthm-btn");
+let dthmRes = document.getElementById("dthmres");
+
+dthmBtn.onclick = function () {
+  let tdHrs = 24;
+  let tdMins = 1440;
+  let dthmInput = Number(document.getElementById("dthm").value);
+  let dthmBtn = document.getElementById("dthm-btn");
+  let dthmRes = document.getElementById("dthmres");
+  if (dthmInput > 0) {
+    let dthmf = `${dthmInput * tdHrs} hours and ${dthmInput * tdMins} minutes`;
+    dthmRes.innerText = dthmf;
+  } else {
+    dthmRes.innerText = "Please select a non-negative number!";
+  }
+};
