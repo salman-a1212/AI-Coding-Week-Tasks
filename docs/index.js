@@ -222,7 +222,7 @@ c2FBtn.onclick = function () {
 f2cBtn.onclick = function () {
   let tempF = Number(document.getElementById("tempf").value);
   let frndr;
-  frndr = tempF - (32 * 5) / 9;
+  frndr = ((tempF - 32) * 5) / 9;
   console.log("frndr", frndr);
   let f2cRes = document.getElementById("f2cres");
   f2cRes.innerText = frndr.toFixed(2);
