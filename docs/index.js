@@ -319,3 +319,17 @@ dthmBtn.onclick = function () {
 };
 
 // 16.
+let revArrIpt = document.getElementById("rev-arr").value;
+let revBtn = document.getElementById("rev-btn");
+let revArrRes = document.getElementById("revarr-res");
+
+revBtn.onclick = function reverseArr() {
+  let revArrIpt = document.getElementById("rev-arr").value;
+  let revBtn = document.getElementById("rev-btn");
+  let revArrRes = document.getElementById("revarr-res");
+  var ret = new Array();
+  for (var i = revArrIpt.length - 1; i >= 0; i--) {
+    ret.push(revArrIpt[i]);
+  }
+  revArrRes.innerText = ret;
+};
