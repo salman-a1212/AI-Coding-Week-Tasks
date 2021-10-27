@@ -255,10 +255,12 @@ thBtn.onclick = function () {
   let thNum = Number(document.getElementById("thnum").value);
   let thBtn = document.getElementById("th-btn");
   let thRes = document.getElementById("thres");
-  if (Math.abs(100 - thNum) <= 20 || Math.abs(400 - thNum) <= 20) {
-    thRes.innerText = "The given number is within the 20 of 100 or 400";
+  let prm = thNum / 20;
+  console.log("prm", prm);
+  if (prm <= 5) {
+    thRes.innerText = "The given number is within the 20 of 100";
   } else {
-    thRes.innerText = "The given number is not within the 20 of 100 or 400";
+    thRes.innerText = "The given number is not within the 20 of 100";
   }
 };
 
@@ -315,3 +317,5 @@ dthmBtn.onclick = function () {
     dthmRes.innerText = "Please select a non-negative number!";
   }
 };
+
+// 16.
