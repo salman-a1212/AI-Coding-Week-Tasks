@@ -115,7 +115,8 @@ label {
 .tsk12con,
 .tsk13con,
 .tsk14con,
-.tsk15con {
+.tsk15con,
+.tsk16con {
   text-align: center;
   padding: 20px;
   /* margin: 20px; */
@@ -136,7 +137,8 @@ label {
 #th-btn,
 #ln-btn,
 #wrd-btn,
-#dthm-btn {
+#dthm-btn,
+#rev-btn {
   padding: 5px 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -224,7 +226,8 @@ input::placeholder {
 #addres,
 #thres,
 #sent-case,
-#dthmres {
+#dthmres,
+#revarr-res {
   margin: 15px;
   border: 1px solid #ddd;
   padding: 5px 10px;
@@ -249,6 +252,7 @@ input::placeholder {
   margin: 20px 0;
 }
 
-.dthm-btnc {
+.dthm-btnc,
+.rev-btncon {
   margin: 25px;
 }
