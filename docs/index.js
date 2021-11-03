@@ -333,3 +333,25 @@ revBtn.onclick = function reverseArr() {
   }
   revArrRes.innerText = ret;
 };
+
+// 17.
+let larValInput1 = parseFloat(document.getElementById("larval-1").value);
+let larValInput2 = parseFloat(document.getElementById("larval-2").value);
+let larValInput3 = parseFloat(document.getElementById("larval-3").value);
+let arrRes1 = document.getElementById("larvalres-1").value;
+let arrRes2 = document.getElementById("larvalres-2").value;
+let arrRes3 = document.getElementById("larvalres-3").value;
+
+let larValBtn = document.getElementById("larval-btn");
+
+larValBtn.onclick = function () {
+  let larValInput1 = parseFloat(document.getElementById("larval-1").value);
+  let larValInput2 = parseFloat(document.getElementById("larval-2").value);
+  let larValInput3 = parseFloat(document.getElementById("larval-3").value);
+  let inputArr = [larValInput1, larValInput2, larValInput3];
+  console.log("inputArr", inputArr);
+  let maxVal = inputArr[0] > inputArr[2] ? inputArr[0] : inputArr[2];
+  document.getElementById("larvalres-1").value = maxVal;
+  document.getElementById("larvalres-2").value = maxVal;
+  document.getElementById("larvalres-3").value = maxVal;
+};
